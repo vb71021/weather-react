@@ -1,5 +1,7 @@
 import Search from "./Search";
+import Current from "./Current";
 import "./App.css";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -11,9 +13,9 @@ function App() {
             <div className="row">
               <div className="col-sm-6">
                 <p>
-                  Today 25 Sep 2022 in city <br />
+                  Today 25 Sep 2022 <br />
                   <div className="city">
-                    Kyiv <strong>19</strong>°C|F{" "}
+                    <Current />
                   </div>
                   <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" />
                 </p>
@@ -24,7 +26,9 @@ function App() {
                   <strong>Change location</strong>{" "}
                 </label>
                 <Search />
-                <button>👉My current location</button>
+                <div className="my_location_button">
+                  <button>👉To my location</button>
+                </div>
               </div>
             </div>
           </div>
