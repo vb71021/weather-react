@@ -17,7 +17,10 @@ function App() {
                   <div className="city">
                     <Current />
                   </div>
-                  <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" />
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                    alt="weather-icon"
+                  />
                 </p>
               </div>
 
