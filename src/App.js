@@ -33,6 +33,12 @@ function App() {
             </div>
           </div>
         </div>
+        <p class="github_link">
+          <a href="https://github.com/vb71021/my-weather-app" id="source">
+            Open-source code
+          </a>
+          by Viktoria Balycheva
+        </p>
       </div>
     </div>
   );
