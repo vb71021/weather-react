@@ -36,13 +36,13 @@ function App() {
             </div>
           </div>
         </div>
-        <p className="github_link">
+        <footer className="github_link">
           <a href="https://github.com/vb71021/weather-react.git" id="source">
             Open-source code
           </a>
           <br />
           by Viktoria Balycheva
-        </p>
+        </footer>
       </div>
     </div>
   );
