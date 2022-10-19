@@ -39,8 +39,7 @@ function App() {
         <footer className="github_link">
           <a href="https://github.com/vb71021/weather-react.git" id="source">
             Open-source code
-          </a>
-          <br />
+          </a>{" "}
           by Viktoria Balycheva
         </footer>
       </div>
