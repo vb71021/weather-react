@@ -47,6 +47,7 @@ export default function Search() {
           type="search"
           className="enter_city"
           placeholder="Enter city.."
+          autoFocus="on"
           onChange={updateCity}
         />
         <input type="Submit" className="go" value="GO" />
