@@ -24,10 +24,9 @@
 .Search .go:hover {
   background-color: #212aa3;
 }
-.Search ul {
+.parameters {
   color: #212aa3;
   text-align: left;
   font-size: 14px;
   list-style-type: none;
-  margin: 0px 0px 0px 20px;
 }

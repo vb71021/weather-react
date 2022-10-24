@@ -13,7 +13,7 @@ function App() {
             <div className="row">
               <div className="col-sm-6">
                 <p>
-                  Today 25 Sep 2022 <br />
+                  Today 24 Oct 2022 <br />
                   <div className="city">
                     <Current />
                   </div>
@@ -25,9 +25,6 @@ function App() {
               </div>
 
               <div className="col-sm-6">
-                <label>
-                  <strong>Change location</strong>{" "}
-                </label>
                 <Search />
                 <div className="my_location_button">
                   <button>👉To my location</button>

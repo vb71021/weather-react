@@ -1,5 +1,4 @@
 .App {
-  font-family: sans-serif;
   text-align: center;
 }
 body {
@@ -10,7 +9,7 @@ body {
   border-color: #217ca3;
   border-width: 2px;
   border-radius: 10px;
-  width: 80%;
+  max-width: 650px;
   background: linear-gradient(
     178deg,
     rgba(255, 255, 255, 0.51) 14.9%,
@@ -27,17 +26,12 @@ body {
 .col-sm-6 {
   padding: 12px;
 }
-.city {
-  color: #212aa3;
-  font-weight: bold;
-  font-size: 32px;
-}
 
 .my_location_button button {
   display: block;
   margin: 0 auto;
   background-color: #9efccf;
-  color: #217ca3;
+  color: #0f5caa;
   font-family: sans-serif;
   border-radius: 27px;
   border: 0px;
@@ -52,10 +46,6 @@ body {
   transition: all 200ms ease-in-out 2ms;
   color: white;
 }
-label {
+p {
   color: #217ca3;
-
-  word-break: break-all;
-  font-size: 18px;
-  font-weight: bold;
 }

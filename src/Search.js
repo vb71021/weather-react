@@ -12,7 +12,7 @@ export default function Search() {
     function showWeather(response) {
       let iconUrl = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
       setMessage(
-        <ul>
+        <ul className="parameters">
           <li>
             The temperature is {Math.round(response.data.main.temp)}°C in {city}
           </li>
@@ -22,8 +22,8 @@ export default function Search() {
           <li>
             The wind is {Math.round(response.data.wind.speed)} km/h in {city}
           </li>
-          <li>
-            Description: {response.data.weather[0].description} in {city}
+          <li className="text-capitalize">
+            {response.data.weather[0].description} in {city}
           </li>
           <li>
             <img src={iconUrl} alt={response.data.weather[0].description} />
