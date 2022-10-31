@@ -22,8 +22,8 @@ export default function Search() {
           <li>
             The wind is {Math.round(response.data.wind.speed)} km/h in {city}
           </li>
-          <li className="text-capitalize">
-            {response.data.weather[0].description} in {city}
+          <li>
+            Description: {response.data.weather[0].description} in {city}
           </li>
           <li>
             <img src={iconUrl} alt={response.data.weather[0].description} />
@@ -47,7 +47,6 @@ export default function Search() {
           type="search"
           className="enter_city"
           placeholder="Enter city.."
-          autoFocus="on"
           onChange={updateCity}
         />
         <input type="Submit" className="go" value="GO" />

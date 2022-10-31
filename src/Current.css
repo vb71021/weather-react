@@ -1,9 +1,8 @@
-.Current h1 {
-  color: #0f5caa;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-}
-.cityName {
+.Current .City {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 86px;
+  color: blueviolet;
+}
+.Current h1 {
+  font-size: 52px;
 }

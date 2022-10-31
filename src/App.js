@@ -12,16 +12,7 @@ function App() {
           <div className="card-body">
             <div className="row">
               <div className="col-sm-6">
-                <p>
-                  Today 24 Oct 2022 <br />
-                  <div className="city">
-                    <Current />
-                  </div>
-                  <img
-                    src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                    alt="weather-icon"
-                  />
-                </p>
+                <Current />
               </div>
 
               <div className="col-sm-6">
