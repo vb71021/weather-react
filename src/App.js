@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="card">
-          <Search defaultCity="London" />
+          <Search defaultCity="Kyiv" />
           <div className="forecast_button">
             <button>👉Forecast</button>
           </div>

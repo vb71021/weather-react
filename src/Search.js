@@ -8,9 +8,9 @@ export default function Search(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function getWeatherData(response) {
-    console.log(response.data.main.name);
+    console.log(response.data.name);
     setWeather({
-      city: response.data.main.name,
+      city: response.data.name,
       temperature: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
@@ -47,11 +47,11 @@ export default function Search(props) {
           />
           <input type="Submit" className="go" value="GO" />
         </form>
-        <InfoWeather weatherData={weather} cityName={city} />
+        <InfoWeather weatherData={weather} />
       </div>
     );
   } else {
-    searchStart();
+    searchStart(city);
     return "loading...";
   }
 }
