@@ -1,6 +1,7 @@
 import Search from "./Search";
-import Current from "./Current";
+
 import "./App.css";
+import Forecast from "./Forecast";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -9,20 +10,11 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="card">
-          <div className="card-body">
-            <div className="row">
-              <div className="col-sm-6">
-                <Current />
-              </div>
-
-              <div className="col-sm-6">
-                <Search />
-                <div className="my_location_button">
-                  <button>👉To my location</button>
-                </div>
-              </div>
-            </div>
+          <Search defaultCity="London" />
+          <div className="forecast_button">
+            <button>👉Forecast</button>
           </div>
+          <Forecast />
         </div>
         <footer className="github_link">
           <a href="https://github.com/vb71021/weather-react.git" id="source">
