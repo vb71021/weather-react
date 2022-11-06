@@ -1,12 +1,15 @@
 import React from "react";
-import "./InfoWeather.css";
+
+import Date from "./Date";
+
 export default function InfoWeather(props) {
+  console.log(props.weatherData.date);
   return (
     <div className="InfoWeather">
       <div container>
         <div className="row">
           <div className="col-sm-6">
-            <h3>01.01.2020 00:00</h3>
+            <Date dateInfo={props.weatherData.date} />
             <h1> {props.weatherData.city}</h1>{" "}
             <p className="degrees">
               {props.weatherData.temperature}

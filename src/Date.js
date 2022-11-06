@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 
 export default function Date(props) {
   let months = [
@@ -16,16 +15,36 @@ export default function Date(props) {
     "November",
     "December",
   ];
-  let sentense = `Today ${" "} ${date.getDate()} ${
-    months[date.getMonth()]
-  } ${" "} ${date.getFullYear()}`;
-  let time = `${date.getHours()}:${date.getMinutes()}`;
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thurday",
+    "Friday",
+    "Saturday",
+  ];
+  let hours = props.dateInfo.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = props.dateInfo.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   return (
-    <div className="Current">
-      <p>
-        {sentense}
-        <br /> {time}
-      </p>
+    <div className="Date">
+      <ul>
+        <li>
+          {props.dateInfo.getDate()} {months[props.dateInfo.getMonth()]}{" "}
+          {props.dateInfo.getFullYear()}
+        </li>
+        <li>
+          {days[props.dateInfo.getDay()]} {hours}
+          {":"}
+          {minutes}
+        </li>
+      </ul>
     </div>
   );
 }

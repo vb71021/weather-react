@@ -18,6 +18,7 @@ export default function Search(props) {
       iconNumber: response.data.weather[0].icon,
       iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       ready: true,
+      date: new Date(response.data.dt * 1000),
     });
   }
   function showWeather(event) {
