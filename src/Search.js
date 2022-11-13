@@ -8,9 +8,11 @@ export default function Search(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function getWeatherData(response) {
-    console.log(response.data.name);
+    console.log(response.data);
     setWeather({
       city: response.data.name,
+      country: response.data.sys.country,
+      coordinates: response.data.coord,
       temperature: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),

@@ -35,7 +35,7 @@ export default function Date(props) {
   return (
     <div className="Date">
       <ul>
-        <li>
+        <li className="fw-bold">
           {props.dateInfo.getDate()} {months[props.dateInfo.getMonth()]}{" "}
           {props.dateInfo.getFullYear()}
         </li>
