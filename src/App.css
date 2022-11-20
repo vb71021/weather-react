@@ -2,7 +2,7 @@
   text-align: center;
 }
 body {
-  background: linear-gradient(#fafbfb 0%, #51aaa6 48%, #82f0f0 100%);
+  background: linear-gradient(#fafbfb 0%, #51aaa6 100%);
 }
 
 .App .card {
@@ -22,9 +22,6 @@ body {
 }
 .github_link {
   margin-bottom: 400px;
-}
-.col-sm-6 {
-  padding: 12px;
 }
 
 .forecast_button button {

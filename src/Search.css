@@ -2,17 +2,25 @@
   font-size: 28px;
   color: #217ca3;
 }
+.Search h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #212aa3;
+  text-shadow: 2px 1px 1px #ffffff;
+}
+.Search h3 {
+  font-size: 20px;
+}
 .Search p {
   color: #217ca3;
 }
 .Search .degrees {
   font-size: 24px;
 }
-.Search h3 {
-  font-size: 20px;
-}
+
 .Search ul {
   list-style: none;
+  padding: 5px;
 }
 .Search .container {
   margin: 5px;

@@ -1,4 +1,5 @@
 import React from "react";
+
 import WeatherIcon from "./WeatherIcon";
 import Date from "./Date";
 import Temperature from "./Temperature";
@@ -19,21 +20,22 @@ export default function InfoWeather(props) {
           </div>
           <div className="col-sm-4">
             <WeatherIcon number={props.weatherData.iconNumber} size={52} />
-            <ul className="float-left">
-              <li className="text-capitalize">
-                {props.weatherData.description}
-              </li>
-            </ul>
+
+            <p className="text-capitalize">{props.weatherData.description}</p>
           </div>
 
           <div className="col-sm-4">
-            <ul className="float-left">
-              <li>wind:{props.weatherData.wind} km/h</li>
-              <li>humidity:{props.weatherData.humidity} %</li>
+            <ul>
+              <li className="float-center">
+                wind: {props.weatherData.wind} km/h
+              </li>
+              <li className="float-center">
+                humidity: {props.weatherData.humidity} %
+              </li>
             </ul>
           </div>
         </div>
-        <h2 className="text-secondary">FORECAST</h2>
+        <h2>F O R E C A S T</h2>
         <Forecast coords={props.weatherData.coordinates} />
       </div>
     </div>
