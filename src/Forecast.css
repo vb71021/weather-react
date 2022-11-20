@@ -1,7 +1,18 @@
-.forecastTempMax {
+.Forecast .forecastTempMax {
   font-weight: bold;
   font-size: 12px;
 }
-.forecastTempMin {
+.Forecast .forecastTempMin {
   font-size: 12px;
+}
+.Forecast .row {
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+}
+.Forecast .column {
+  border: 1px solid #212aa3;
+  border-radius: 0px 20px;
+  margin: 5px;
+  background-color: rgb(110, 249, 159);
 }

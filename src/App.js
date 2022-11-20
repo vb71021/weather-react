@@ -12,7 +12,12 @@ function App() {
           <Search defaultCity="Kyiv" />
         </div>
         <footer className="github_link">
-          <a href="https://github.com/vb71021/weather-react.git" id="source">
+          <a
+            href="https://github.com/vb71021/weather-react.git"
+            id="source"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Open-source code
           </a>{" "}
           by Viktoria Balycheva

@@ -21,11 +21,11 @@ export default function Forecast(props) {
     return (
       <div className="Forecast">
         <div className="container">
-          <div className="row">
+          <div className="row ">
             {forecastData.map(function (dailyForecast, index) {
               if (index < 6) {
                 return (
-                  <div className="col-2" key={index}>
+                  <div className="col-sm-3  column" key={index}>
                     <ForecastOneDay oneDayForecast={dailyForecast} />
                   </div>
                 );
