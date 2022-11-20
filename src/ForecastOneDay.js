@@ -18,17 +18,15 @@ export default function ForecastOneDay(props) {
   }
   return (
     <div className="ForecastOneDay">
-      <div className="col">
-        <div className="forecastDay">{day()}</div>{" "}
-        <WeatherIcon number={props.oneDayForecast.weather[0].icon} size={32} />
-        <div className="forecastTemp">
-          <div className="forecastTempMax">
-            Max {Math.round(props.oneDayForecast.temp.max)}°С
-          </div>
-          <div className="forecastTempMin">
-            {" "}
-            Min {Math.round(props.oneDayForecast.temp.min)} °С
-          </div>
+      <div className="forecastDay">{day()}</div>{" "}
+      <WeatherIcon number={props.oneDayForecast.weather[0].icon} size={32} />
+      <div className="forecastTemp">
+        <div className="forecastTempMax">
+          Max {Math.round(props.oneDayForecast.temp.max)}°С
+        </div>
+        <div className="forecastTempMin">
+          {" "}
+          Min {Math.round(props.oneDayForecast.temp.min)} °С
         </div>
       </div>
     </div>
