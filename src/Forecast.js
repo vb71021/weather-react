@@ -20,16 +20,20 @@ export default function Forecast(props) {
   if (loaded) {
     return (
       <div className="Forecast">
-        <div className="row">
-          {forecastData.map(function (dailyForecast, index) {
-            if (index < 6) {
-              return (
-                <div className="col" key={index}>
-                  <ForecastOneDay oneDayForecast={dailyForecast} />
-                </div>
-              );
-            }
-          })}
+        <div className="container">
+          <div className="row">
+            {forecastData.map(function (dailyForecast, index) {
+              if (index < 6) {
+                return (
+                  <div className="col" key={index}>
+                    <ForecastOneDay oneDayForecast={dailyForecast} />
+                  </div>
+                );
+              } else {
+                return null;
+              }
+            })}
+          </div>
         </div>
       </div>
     );
